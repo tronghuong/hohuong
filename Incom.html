@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>Income-Add</title>
+    <style type="text/css">
+        body { font-size: 16pt; }
+        .container { width: 700px; margin-left: auto; margin-right: auto; }
+        form { border: #cccccc 1px solid; padding: 20px; margin-bottom: 10px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; }
+        .form-element { margin-bottom: 10px; margin-left: 200px; }
+        .form-element1 { margin-bottom: 10px;margin-left: 200px; }
+        .form-element2 { margin-bottom: 10px;margin-left: 225px; }
+        .form-element3 { margin-bottom: 10px; margin-left: 270px;}
+        #btn { background-color: #1E90FF;border-radius: 5px;height: 40px;width: 70px;color: white; }
+        #slc{width: 225px;height: 35px;height: 35px ; }
+        #ipt{color: #B5B5B5;width: 220px;height: 35px;}
+        #ipt1{color: #B5B5B5;width: 220px;height: 35px;}
+        .comment { padding: 10px; margin-bottom: 10px; border-bottom: #cccccc 1px solid; }
+        .comment .links { float: right; }
+        .comment .links a { margin-left: 10px; }
+        .comment .author { font-style: italic; }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="comments">
+        </div>
+        <form id="comment-form">
+        <label for="name">Income - Add </label>
+            <div class="form-element">
+                <label for="name">Content </label>
+                <input id="ipt" type="text" id="name" name="name" value="Content" />
+            </div>
+            <div class="form-element1">
+                <label for="name">Amount </label>
+                <input id="ipt1" type="text" id="name" name="name" value="Amount"/>
+            </div>
+            
+            <div class="form-element2">
+                <label for="name">Fund</label>
+                <select id="slc">
+                    <option>Tiền mặt</option>
+                    <option>Tài Khoản Thẻ</option>
+                </select>  
+            </div>
+            
+            <div class="form-element3">
+                <button id="btn" type="submit">Save</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
